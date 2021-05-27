@@ -1,0 +1,321 @@
+
+body{
+  background-color: #fffff0;
+  margin-top: 20px;
+}
+
+#original_images {
+      text-align: center;
+      margin: 24px;
+      line-height: 0;
+
+}
+
+.image_holder {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+
+}
+
+.image_holder img {
+
+}
+
+/* image hover ......................................... */
+
+
+
+/* ......................................................... */
+
+body h1 {
+  text-align: center;
+  margin: 40px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  width: 300px;
+  height: 20px;
+
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 5px solid orange ; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 5px; /* Adjust as needed */
+  animation:
+    typing .8s steps(20, end),
+    blink-caret .4s step-end infinite;
+
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 30% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+
+
+/* BUTTONS..................................................... */
+  .buttons{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+ button {
+
+  position:relative;
+  text-align: center;
+  align-content: center;
+  float: center;
+  display:block;
+  display:inline-block;
+  height: 30px;
+  width: 100px;
+  margin: 5px 4px;
+  padding: 3px 3px;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #383736;
+  border: 2px #383736 solid;
+  border-radius: 2px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+  }
+  /* background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+} */
+
+/* .................................................. */
+.red:hover {
+  color: white;
+  border-color: white;
+}
+
+.red:before {
+  content: "";
+  position: absolute;
+  background: red;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.red:hover:before {
+  top: 0;
+}
+
+/* .................................................. */
+.orange:hover {
+  color: white;
+}
+
+.orange:before {
+  content: "";
+  position: absolute;
+  background: orange;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.orange:hover:before {
+  top: 0;
+}
+/* .................................................. */
+.yellow:hover {
+  color: white;
+}
+
+.yellow:before {
+  content: "";
+  position: absolute;
+  background: yellow;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.yellow:hover:before {
+  top: 0;
+}
+/* .................................................. */
+
+.green:hover {
+  color: white;
+}
+
+.green:before {
+  content: "";
+  position: absolute;
+  background: green;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.green:hover:before {
+  top: 0;
+}
+
+/* .................................................. */
+
+.cyan:hover {
+  color: white;
+}
+
+.cyan:before {
+  content: "";
+  position: absolute;
+  background: cyan;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.cyan:hover:before {
+  top: 0;
+}
+/* .................................................. */
+
+.blue:hover {
+  color: white;
+}
+
+.blue:before {
+  content: "";
+  position: absolute;
+  background: blue;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.blue:hover:before {
+  top: 0;
+}
+
+/* .................................................. */
+.purple:hover {
+  color: white;
+}
+
+.purple:before {
+  content: "";
+  position: absolute;
+  background: purple;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.purple:hover:before {
+  top: 0;
+}
+
+/* .................................................. */
+.pink:hover {
+  color: white;
+}
+
+.pink:before {
+  content: "";
+  position: absolute;
+  background: pink;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.pink:hover:before {
+  top: 0;
+}
+
+
+ /* zoom in and out ....................................... */
+
+
+.btn {
+   width: 10px;
+   height: 10px;
+   border: 1px solid #005bac;
+   border-radius: 50%;
+   /* -moz-border-radius: 50%;
+   -webkit-border-radius: 50%; */
+   padding: 15px 10px 5px;
+   margin-left: 20px;
+   position: fixed;
+   text-align: center;
+   -ms-user-select: none;
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+ 	 transition: all 0.3s ease;
+ }
+ .btn:hover {
+ }
+
+ .zoom_in {
+   background-image:
+   background-size: cover;
+ }
+
+ .zoom_out {
+   background-color: red;
+   margin-top: 40px;
+ }
+ .zoom {
+   background-color: gold;
+   margin-top: 80px;
+ }

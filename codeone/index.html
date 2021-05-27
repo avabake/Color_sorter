@@ -1,0 +1,45 @@
+<!--
+RUN THIS WITH A PYTHON SERVER
+cd to the folder with your website
+py -m http.server
+then open your browser and type in: localhost:8000
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css" >
+
+
+    <title></title>
+  </head>
+
+  <body>
+
+    <h1>Pick a Color</h1>
+    <div class="buttons">
+      <button class="red" onclick="filterBy('red')">RED</button>
+      <button class="orange" onclick="filterBy('orange')">ORANGE</button>
+      <button class="yellow" onclick="filterBy('yellow')">YELLOW</button>
+      <button class="green" onclick="filterBy('green')">GREEN</button>
+      <button class="cyan" onclick="filterBy('cyan')">CYAN</button>
+      <button class="blue" onclick="filterBy('blue')">BLUE</button>
+      <button class="purple" onclick="filterBy('purple')">PURPLE</button>
+      <button class="pink" onclick="filterBy('pink')">PINK</button>
+      <button class="rainbow" onclick="drawRainbow()">Rainbow</button>
+    </div>
+
+
+      <button class="btn zoom_in" onclick= "resizeImages(10)"></button>
+      <button class="btn zoom_out" onclick= "resizeImages(-10)"></button>
+      <button class="btn zoom"></button>
+
+    <div id="original_images"></div>
+    <div id="block"></div>
+
+    <script src="sorter.js"></script>
+
+  </body>
+</html>
