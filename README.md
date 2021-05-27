@@ -1,4 +1,5 @@
 # Image Colour Sorter
+Ava Bake
 
 This code creates a simple straight forward way to carry out basic colour recognition that ordered images depending on their colours present. If you were to push on one of the buttons that are labelled as a colour the images will be organised with the images with the most of those pixels of that colour showed first and then the least shown last. Then the final button of rainbow takes the most prominent colour from each image the orders them in the hue spectrum (ie red – orange –yellow – green – cyan – blue – purple – pink). 
 
@@ -51,9 +52,9 @@ This should update the CSV file.
 
 ## What I wanted to accomplish
 
- - [x] something that is able to identify what each colour is in the images
+ - [x] something that is able to identify what each colour is in a images
  - [x] a way to organize each colour 
- - [x] choices for the users 
+ - [x] choices for what colour the users wants to pick 
  - [x] Zoom in and out button that lets the user easily shrink or enlarge the images to view 
 
  - [ ] further details for the colours to be ordered into clear shades (my code only really works very effectively on bright images with a very prominent color and is terrible with landscape nature images)
@@ -62,6 +63,9 @@ This should update the CSV file.
  - [ ] a front face place on the website to upload images easily 
  - [ ] an export option that exported the images as a styled collage in high resolution
  - [ ] choices on how this collage is exported (eg size, colour or shape of the grid)  
+
+
+My goal of this code is wanting to create a tool to help create an aesthetically pleasing collage with the photos that may be seen as boring but together in a collective is amazingly satisfying. I feel I have achieved my goal and I have many possibilities to further improve it and work on it in the future. 
 
 
 
