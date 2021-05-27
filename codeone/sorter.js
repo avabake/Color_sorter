@@ -5,7 +5,6 @@ var images_with_most_red = [];
 var images_with_most_orange = [];
 var images_with_most_yellow = [];
 var images_with_most_green = [];
-var images_with_most_cyan = [];
 var images_with_most_blue = [];
 var images_with_most_purple = [];
 var images_with_most_pink = [];
@@ -45,10 +44,9 @@ fetch('colors.csv', {method: 'GET'})
         'orange': Number(values[2]),
         'yellow': Number(values[3]),
         'green': Number(values[4]),
-        'cyan': Number(values[5]),
-        'blue': Number(values[6]),
-        'purple': Number(values[7]),
-        'pink': Number(values[8])
+        'blue': Number(values[5]),
+        'purple': Number(values[6]),
+        'pink': Number(values[7])
       }
 
       let highest = Math.max(...Object.values(entry));
@@ -71,10 +69,6 @@ fetch('colors.csv', {method: 'GET'})
 
       if (highest == 'green') {
         images_with_most_green.push(entry);
-      }
-
-      if (highest == 'cyan') {
-        images_with_most_cyan.push(entry);
       }
 
       if (highest == 'blue') {
@@ -111,7 +105,6 @@ function drawRainbow() {
   renderImages(images_with_most_orange);
   renderImages(images_with_most_yellow);
   renderImages(images_with_most_green);
-  renderImages(images_with_most_cyan);
   renderImages(images_with_most_blue);
   renderImages(images_with_most_purple);
   renderImages(images_with_most_pink);

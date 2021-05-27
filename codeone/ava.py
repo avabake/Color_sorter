@@ -27,7 +27,6 @@ for filename in os.listdir('./original_images'):
     oranges = 0
     yellows = 0
     greens = 0
-    cyans = 0
     blues = 0
     purples = 0
     pinks = 0
@@ -55,11 +54,9 @@ for filename in os.listdir('./original_images'):
                         oranges += 1
                     if h > 40 and h < 70:
                         yellows += 1
-                    if h > 70 and h < 140:
+                    if h > 70 and h < 145:
                         greens += 1
-                    if h > 140 and h < 185:
-                        cyans += 1
-                    if h > 185 and h < 260:
+                    if h > 145 and h < 260:
                         blues += 1
                     if h > 260 and h < 295:
                         purples += 1
@@ -126,12 +123,11 @@ for filename in os.listdir('./original_images'):
     print(oranges)
     print(yellows)
     print(greens)
-    print(cyans)
     print(blues)
     print(purples)
     print(pinks)
 
-    data.append([filename, reds, oranges, yellows, greens, cyans, blues, purples, pinks ])
+    data.append([filename, reds, oranges, yellows, greens, blues, purples, pinks ])
 
 with open('colors.csv', mode='w') as color_file:
     color_writer = csv.writer(color_file, delimiter=',')

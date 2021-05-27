@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\avaba\Desktop\codeone\env"
+VIRTUAL_ENV="C:\Users\avaba\Desktop\Color_sorter\codeone\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

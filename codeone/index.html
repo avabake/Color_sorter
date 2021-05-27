@@ -24,7 +24,6 @@ then open your browser and type in: localhost:8000
       <button class="orange" onclick="filterBy('orange')">ORANGE</button>
       <button class="yellow" onclick="filterBy('yellow')">YELLOW</button>
       <button class="green" onclick="filterBy('green')">GREEN</button>
-      <button class="cyan" onclick="filterBy('cyan')">CYAN</button>
       <button class="blue" onclick="filterBy('blue')">BLUE</button>
       <button class="purple" onclick="filterBy('purple')">PURPLE</button>
       <button class="pink" onclick="filterBy('pink')">PINK</button>
@@ -32,9 +31,12 @@ then open your browser and type in: localhost:8000
     </div>
 
 
-      <button class="btn zoom_in" onclick= "resizeImages(10)"></button>
-      <button class="btn zoom_out" onclick= "resizeImages(-10)"></button>
-      <button class="btn zoom"></button>
+      <button class="btn in" onclick= "resizeImages(10)">
+        <img class="in_img" src="zoom_in.png" alt="">
+      </button>
+      <button class="btn out" onclick= "resizeImages(-10)">
+        <img class="out_img" src="zoom_out.png" alt="">
+      </button>
 
     <div id="original_images"></div>
     <div id="block"></div>

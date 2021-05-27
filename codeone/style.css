@@ -20,15 +20,7 @@ body{
 
 }
 
-.image_holder img {
 
-}
-
-/* image hover ......................................... */
-
-
-
-/* ......................................................... */
 
 body h1 {
   text-align: center;
@@ -102,20 +94,9 @@ body h1 {
   -moz-transition:    0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
   }
-  /* background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-  animation:slidebg 2s linear infinite;
-}
-
-@keyframes slidebg {
-  to {
-    background-position:20vw;
-  }
-} */
-
 /* .................................................. */
 .red:hover {
   color: white;
-  border-color: white;
 }
 
 .red:before {
@@ -198,27 +179,6 @@ body h1 {
 
 /* .................................................. */
 
-.cyan:hover {
-  color: white;
-}
-
-.cyan:before {
-  content: "";
-  position: absolute;
-  background: cyan;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  -webkit-transition: top 0.09s ease-in;
-}
-
-.cyan:hover:before {
-  top: 0;
-}
-/* .................................................. */
-
 .blue:hover {
   color: white;
 }
@@ -281,6 +241,35 @@ body h1 {
   top: 0;
 }
 
+/* .................................................. */
+.rainbow:hover {
+  color: white;
+  animation:slidebg 2s linear infinite;
+}
+
+.rainbow:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation: slidebg 2s linear infinite;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.rainbow:hover:before {
+  top: 0;
+}
+
+@keyframes slidebg {
+to {
+  background-position:20vw;
+    }
+}
+
 
  /* zoom in and out ....................................... */
 
@@ -288,12 +277,12 @@ body h1 {
 .btn {
    width: 10px;
    height: 10px;
-   border: 1px solid #005bac;
+   border: 1px solid black;
    border-radius: 50%;
    /* -moz-border-radius: 50%;
    -webkit-border-radius: 50%; */
    padding: 15px 10px 5px;
-   margin-left: 20px;
+   margin-left: 5px;
    position: fixed;
    text-align: center;
    -ms-user-select: none;
@@ -302,20 +291,31 @@ body h1 {
    -webkit-user-select: none;
    user-select: none;
  	 transition: all 0.3s ease;
+
+
  }
  .btn:hover {
  }
 
- .zoom_in {
-   background-image:
-   background-size: cover;
+ .in {
  }
 
- .zoom_out {
-   background-color: red;
+ .out {
    margin-top: 40px;
  }
- .zoom {
-   background-color: gold;
-   margin-top: 80px;
+
+ .in_img {
+   width: 18px;
+   height: 18px;
+   margin-left: -8.1px;
+   margin-top: -20px;
+   margin-bottom: 3.5px;
+ }
+
+ .out_img {
+   width: 18px;
+   height: 18px;
+   margin-left: -8.1px;
+   margin-top: -20px;
+   margin-bottom: 3.5px;
  }
